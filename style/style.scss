@@ -1,0 +1,255 @@
+@font-face {
+    font-family: "TT Hoves";
+    src: url(../assets/fonts/TT\ Hoves\ Bold.otf);
+}
+
+body {
+    font-family: "TT Hoves";
+    background-color: #F3F2F8;
+
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+        cursor: pointer;
+    }
+
+    &__languages {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 10px;
+
+        p {
+            position: relative;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 22.41px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #323232;
+            transition: color 0.6s ease;
+
+            &:hover {
+                color: #171717;
+            }
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -20%;
+                right: 50%;
+                transform: translateX(50%);
+                width: 0%;
+                height: 2px;
+                border-radius: 10px;
+                background-color: #343434;
+                transition: width 0.6s ease;
+            }
+
+            &:hover:after {
+                width: 100%;
+            }
+
+            &:nth-child(2) {
+                font-size: 18px;
+                font-weight: 700;
+                line-height: 22.41px;
+                letter-spacing: 1px;
+                text-align: center;
+                text-underline-position: from-font;
+                text-decoration-skip-ink: none;
+                color: transparent;
+                -webkit-text-stroke: 1px #C4C4C4;
+
+                &:hover {
+                    color: #e8e8ea;
+
+                    &:after {
+                        background-color: #b1b0b0;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.AIRTIGHT {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    position: relative;
+
+    h1 {
+        position: absolute;
+        top: 100%;
+        width: 100%;
+        font-size: 200px;
+        font-weight: 700;
+        line-height: 243.9px;
+        letter-spacing: -0.04em;
+        text-align: center;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+        color: #FFFFFF;
+    }
+
+    .bubbles {
+        position: absolute;
+        top: -50px;
+        left: 51%;
+        transform: rotate(200deg);
+    }
+
+    .bubbles2 {
+        position: absolute;
+        top: 350px;
+        left: 20%;
+        transform: rotate(-10deg);
+    }
+}
+
+.footer {
+    margin-top: -35px;
+    display: flex;
+    width: 100%;
+    position: relative;
+    align-items: center;
+    .footer__icons {
+        display: flex;
+        gap: 20px;
+
+        img {
+            cursor: pointer;
+        }
+    }
+
+    &__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+
+        p {
+            font-size: 16px;
+            font-weight: 700;
+            line-height: 14.94px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;
+            color: #323232;
+        }
+    }
+    &__img {
+        position: absolute;
+        top: -100%;
+        right: 0;
+        transform: translateY(-50%);
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        align-items: center;
+        img {
+            cursor: pointer;
+        }
+        &__bg {
+            position: absolute;
+            top: 90px;
+            right: 0;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            align-items: center;
+            width: 100%;
+            height: 4px;
+            border-radius: 10px;
+            background-color: #DADAE2;
+           &__line {
+            width: 30%;
+            height: 4px;
+            margin-left: 40%;
+            border-radius: 10px;
+            background-color: #A497F2;
+           }
+        }
+    }
+}
+
+.swiper {
+    width: 100%;
+    height: calc(100vh - 75.9px);
+    z-index: 100;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    margin-left: 15%;
+    display: block;
+    width: 900px;
+    height: 100%;
+    object-fit: cover;
+  }
+  .glass {
+    position: absolute;
+    top: 55%;
+    right: 24%;
+    width: 140px;
+    height: 140px;
+    background-color: rgba(255, 255, 255, 0.7);
+    border: 2.95px solid #FFFFFFB2;
+    backdrop-filter: blur(2px);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &__text {
+        display: flex;
+        align-items: center;
+        justify-content: center;   
+        gap: 15px;
+
+        p {
+            font-size: 22.11px;
+            font-weight: 700;
+            line-height: 27.53px;
+            text-align: center;
+            text-underline-position: from-font;
+            text-decoration-skip-ink: none;      
+            color: #323232;
+        }
+        img {
+            width: 12px;
+            cursor: pointer;
+        }
+        .vector {
+            transform: rotate(180deg);
+            margin-left: 0px;
+            margin-right: 7px;
+        }
+    }
+  }
