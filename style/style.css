@@ -192,6 +192,28 @@ body {
   justify-content: center;
   align-items: center;
 }
+.swiper-slide .Nike {
+  width: 53px;
+  height: 19.8px;
+  position: absolute;
+  top: 27%;
+  left: 78%;
+  transform: translate(-50%, -50%);
+}
+.swiper-slide h3 {
+  position: absolute;
+  top: 40%;
+  left: 2%;
+  transform: translate(-50%, -50%);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 29.88px;
+  text-align: center;
+  text-underline-position: from-font;
+  -webkit-text-decoration-skip-ink: none;
+          text-decoration-skip-ink: none;
+  color: #323232;
+}
 
 .swiper-slide img {
   margin-left: 15%;
@@ -241,4 +263,28 @@ body {
   transform: rotate(180deg);
   margin-left: 0px;
   margin-right: 7px;
+}
+
+.swiper-pagination-bullets {
+  position: absolute;
+  top: 45% !important;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet {
+  width: 5px;
+  height: 5px;
+  background-color: #000000;
+  border-radius: 50%;
+}
+.swiper-pagination-bullets .swiper-pagination-bullet-active {
+  transform: scale(1.5);
+  background-color: transparent;
+  border: 2px solid #323232;
 }/*# sourceMappingURL=style.css.map */
